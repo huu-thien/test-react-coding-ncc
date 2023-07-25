@@ -1,7 +1,6 @@
-
 .card-item {
-  
 }
+
 .card-title {
   text-align: left;
 }
@@ -9,15 +8,17 @@
   margin: 3rem;
 }
 .card-content img {
+  margin-left: -3rem;
   float: left;
-  width: 120px;
+  width: 80px;
   border: 1px solid #3e50af;
   padding: 1rem;
   margin-right: 2rem;
-  margin-bottom: 1rem;
-  
+  margin-bottom: 0.5rem;
+  overflow: auto;
 }
 .card-des {
-  text-align: justify;
+  margin-left: -3rem;
+  text-align: left;
   font-size: 1.5rem;
 }

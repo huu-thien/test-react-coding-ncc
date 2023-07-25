@@ -4,7 +4,7 @@ import "./Sidebar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  
+
   return (
     <div className="container-side-bar">
       <div className="side-bar">
@@ -27,7 +27,7 @@ const Sidebar = () => {
         </ul>
         <div className="header-mobile">
           <FontAwesomeIcon
-            icon="bars"
+            icon={showMenu ? "times" : "bars"}
             className="icon-menu"
             onClick={() => setShowMenu(!showMenu)}
           />
@@ -35,19 +35,34 @@ const Sidebar = () => {
       </div>
       {showMenu && (
         <ul className="menu-mobile">
-          <li className="menu-item-mobile" onClick={() => setShowMenu(!showMenu)}>
+          <li
+            className="menu-item-mobile"
+            onClick={() => setShowMenu(!showMenu)}
+          >
             <a href="#">Home</a>
           </li>
-          <li className="menu-item-mobile" onClick={() => setShowMenu(!showMenu)}>
+          <li
+            className="menu-item-mobile"
+            onClick={() => setShowMenu(!showMenu)}
+          >
             <a href="#">Services</a>
           </li>
-          <li className="menu-item-mobile" onClick={() => setShowMenu(!showMenu)}>
+          <li
+            className="menu-item-mobile"
+            onClick={() => setShowMenu(!showMenu)}
+          >
             <a href="#">News</a>
           </li>
-          <li className="menu-item-mobile" onClick={() => setShowMenu(!showMenu)}>
+          <li
+            className="menu-item-mobile"
+            onClick={() => setShowMenu(!showMenu)}
+          >
             <a href="#">Blog</a>
           </li>
-          <li className="menu-item-mobile" onClick={() => setShowMenu(!showMenu)}>
+          <li
+            className="menu-item-mobile"
+            onClick={() => setShowMenu(!showMenu)}
+          >
             <a href="#">Contact</a>
           </li>
         </ul>

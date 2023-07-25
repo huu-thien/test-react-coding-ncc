@@ -11,7 +11,10 @@ const CardItem = () => {
           exercitationem culpa, id dolore ipsam. Error tempora adipisci non
           saepe sed.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           Voluptatibus omnis ut aliquid provident itaque rerum, quidem obcaecati
-          a sed exercitationem culpa, id dolore ipsam.
+          a sed exercitationem culpa, id dolore ipsam. Lorem ipsum dolor sit
+          amet consectetur, adipisicing elit. Voluptatibus omnis ut aliquid
+          provident itaque rerum, quidem obcaecati a sed exercitationem culpa,
+          id dolore ipsam.
         </p>
       </div>
     </div>

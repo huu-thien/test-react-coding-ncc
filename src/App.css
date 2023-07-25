@@ -29,6 +29,7 @@ img {
 .app {
   display: grid;
   grid-template-columns: 200px 1fr;
+  overflow-x: hidden;
 }
 
 /* Mobile & Tablet */
@@ -41,13 +42,16 @@ img {
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
   .content {
-    margin: 2rem 5rem !important; 
+    margin: 2rem 5rem !important;
   }
   .list-card {
     grid-template-columns: repeat(1, 1fr) !important;
   }
+  .heading {
+    padding: 3rem 7rem !important;
+  } 
   footer {
-    margin: 0;
+    margin: 0rem -5rem !important;
   }
   footer p {
     text-align: center;
@@ -56,7 +60,7 @@ img {
 /* Mobile */
 @media (max-width: 739px) {
   .content {
-    margin: 2rem 2rem !important;
+    margin: 2rem 3rem !important;
   }
   .heading {
     padding: 4rem !important;
@@ -89,6 +93,7 @@ img {
     padding-right: 2rem;
     cursor: pointer;
   }
+  
   footer p {
     text-align: center;
   }
