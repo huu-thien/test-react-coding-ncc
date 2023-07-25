@@ -1,10 +1,10 @@
-.side-bar {
+// .side-bar {
+//   background-color: #191818;
+// }
+.container-side-bar {
   background-color: #191818;
 }
 .header-mobile i {
-  display: none;
-}
-.menu-mobile {
   display: none;
 }
 .hide {
@@ -19,6 +19,21 @@
   background-color: #999;
 }
 .menu-item a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.menu-mobile {
+  text-align: center;
+}
+.menu-item-mobile {
+  padding: 10px;
+  cursor: pointer;
+}
+.menu-item-mobile:hover {
+  background-color: #999;
+}
+.menu-item-mobile a {
   color: #fff;
   font-size: 1.6rem;
 }

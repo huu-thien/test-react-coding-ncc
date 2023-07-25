@@ -25,9 +25,71 @@ a {
 img {
   max-width: 100%;
   max-height: 100%;
-  display: block;
 }
 .app {
   display: grid;
   grid-template-columns: 200px 1fr;
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+  .list-card {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .content {
+    margin: 2rem 5rem !important; 
+  }
+  .list-card {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  footer {
+    margin: 0;
+  }
+  footer p {
+    text-align: center;
+  }
+}
+/* Mobile */
+@media (max-width: 739px) {
+  .content {
+    margin: 2rem 2rem !important;
+  }
+  .heading {
+    padding: 4rem !important;
+  }
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+  .side-bar .menu-item {
+    display: none;
+  }
+  .menu-mobile {
+    background-color: #191818;
+  }
+  .menu-mobile .menu-item-mobile:hover {
+    background-color: #999;
+  }
+
+  .header-mobile {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .icon-menu {
+    display: block;
+    color: #fff;
+    align-self: center;
+    font-size: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+  footer p {
+    text-align: center;
+  }
 }
